@@ -1,0 +1,111 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: rebeccapurple;
+}
+
+.container {
+  width: 40%;
+  height: 80vh;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.app {
+  width: 100%;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-person {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.person-parent {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.title {
+  width: 100%;
+  padding: 20px 0px;
+  text-align: center;
+}
+
+.items {
+  padding: 0px 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-height: 70%;
+  overflow-y: scroll;
+}
+.items::-webkit-scrollbar {
+  display: none;
+}
+
+.years {
+  color: gray;
+}
+.personName {
+  font-weight: bold;
+}
+
+.btnDele {
+  background: #f48fb1;
+  border: none;
+  padding: 10px;
+  width: 70%;
+  cursor: pointer;
+  margin: 20px 15%;
+  border-radius: 10px;
+  position: absolute;
+  bottom: 0px;
+}
+
+.extraBold {
+  font-family: "Rubik";
+}
+
+.noBirth {
+  color: gray;
+  text-align: center;
+}
+
+.plusIcon {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  font-size: 50px;
+  color: white;
+}
+
+.formAddBirth {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.addItem-title {
+  text-align: center;
+  font-family: "rubik";
+}
+
+.MuiFormControl-root {
+  width: 100%;
+}
+
+
+.date-picker.error {
+  border: 1px solid red; /* Adjust the border style as needed */
+}
